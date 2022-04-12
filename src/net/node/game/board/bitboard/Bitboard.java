@@ -12,8 +12,8 @@ public class Bitboard {
 		return Long.numberOfTrailingZeros(bb);
 	}
 	
-	public static int lastSquare() {
-		int i = Long.numberOfLeadingZeros(EMPTY);
+	public static int lastSquare(long bb) {
+		int i = Long.numberOfLeadingZeros(bb);
 		
 		return BoardSquare.H8 - i;
 	}
